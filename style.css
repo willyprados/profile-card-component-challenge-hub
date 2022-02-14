@@ -75,7 +75,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border-top: 2px solid #96969633;
-  padding: 8px 0;
+  padding: 0 0 8px;
 }
 
 .data {
@@ -99,9 +99,16 @@ h1 {
 .attribution a {
   color: #3e52a3;
   cursor: pointer;
+  font-weight: 600;
 }
 
 @media (min-width: 780px) {
+  img {
+    right: 125px;
+  }
+  .card {
+    width: 350px;
+  }
   .root::before {
     content: url(./images/bg-pattern-top.svg);
     position: fixed;
